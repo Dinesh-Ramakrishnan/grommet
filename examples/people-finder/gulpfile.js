@@ -17,8 +17,12 @@ var opts = {
   jsAssets: ['examples/people-finder/src/js/**/*.js'],
   mainJs: 'examples/people-finder/src/js/index.js',
   mainScss: 'examples/people-finder/src/scss/index.scss',
+  icons: {
+    source: path.resolve(__dirname, '../../src/img/icons'),
+    destination: path.resolve(__dirname, '../../src/js/components/icons/base')
+  },
   sync: {
-    hostname: 'grommet.usa.hp.com',
+    hostname: 'ligo.us.rdlabs.hpecorp.net',
     username: 'ligo',
     remoteDestination: '/var/www/html/examples/people-finder/dist'
   },
